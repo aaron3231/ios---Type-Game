@@ -14,6 +14,11 @@
 		0F7E218D20E25A49008C1F4D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0F7E218B20E25A49008C1F4D /* LaunchScreen.storyboard */; };
 		0F7E219820E25A4A008C1F4D /* projectTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F7E219720E25A4A008C1F4D /* projectTests.swift */; };
 		0F7E21A320E25A4A008C1F4D /* projectUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F7E21A220E25A4A008C1F4D /* projectUITests.swift */; };
+		0F7E21B120E25ACA008C1F4D /* RecordTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F7E21B020E25ACA008C1F4D /* RecordTableViewCell.swift */; };
+		0F7E21B720E2630A008C1F4D /* Record.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F7E21B620E2630A008C1F4D /* Record.swift */; };
+		0F7E21B920E26396008C1F4D /* EditRecordTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F7E21B820E26396008C1F4D /* EditRecordTableViewController.swift */; };
+		0F7E21BB20E26646008C1F4D /* RecordTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F7E21BA20E26646008C1F4D /* RecordTableViewController.swift */; };
+		0F7E21BD20E26D69008C1F4D /* PlayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F7E21BC20E26D69008C1F4D /* PlayViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +52,11 @@
 		0F7E219E20E25A4A008C1F4D /* projectUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = projectUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0F7E21A220E25A4A008C1F4D /* projectUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = projectUITests.swift; sourceTree = "<group>"; };
 		0F7E21A420E25A4A008C1F4D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0F7E21B020E25ACA008C1F4D /* RecordTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordTableViewCell.swift; sourceTree = "<group>"; };
+		0F7E21B620E2630A008C1F4D /* Record.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Record.swift; sourceTree = "<group>"; };
+		0F7E21B820E26396008C1F4D /* EditRecordTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditRecordTableViewController.swift; sourceTree = "<group>"; };
+		0F7E21BA20E26646008C1F4D /* RecordTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordTableViewController.swift; sourceTree = "<group>"; };
+		0F7E21BC20E26D69008C1F4D /* PlayViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,9 +110,14 @@
 				0F7E218220E25A47008C1F4D /* AppDelegate.swift */,
 				0F7E218420E25A47008C1F4D /* ViewController.swift */,
 				0F7E218620E25A47008C1F4D /* Main.storyboard */,
+				0F7E21B620E2630A008C1F4D /* Record.swift */,
+				0F7E21B020E25ACA008C1F4D /* RecordTableViewCell.swift */,
+				0F7E21BC20E26D69008C1F4D /* PlayViewController.swift */,
 				0F7E218920E25A49008C1F4D /* Assets.xcassets */,
 				0F7E218B20E25A49008C1F4D /* LaunchScreen.storyboard */,
 				0F7E218E20E25A49008C1F4D /* Info.plist */,
+				0F7E21B820E26396008C1F4D /* EditRecordTableViewController.swift */,
+				0F7E21BA20E26646008C1F4D /* RecordTableViewController.swift */,
 			);
 			path = project;
 			sourceTree = "<group>";
@@ -256,8 +271,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0F7E21B920E26396008C1F4D /* EditRecordTableViewController.swift in Sources */,
+				0F7E21B720E2630A008C1F4D /* Record.swift in Sources */,
 				0F7E218520E25A47008C1F4D /* ViewController.swift in Sources */,
 				0F7E218320E25A47008C1F4D /* AppDelegate.swift in Sources */,
+				0F7E21BB20E26646008C1F4D /* RecordTableViewController.swift in Sources */,
+				0F7E21BD20E26D69008C1F4D /* PlayViewController.swift in Sources */,
+				0F7E21B120E25ACA008C1F4D /* RecordTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -432,6 +452,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = project/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -449,6 +470,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = project/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
