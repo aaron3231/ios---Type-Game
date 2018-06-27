@@ -93,13 +93,10 @@ class PlayViewController: UIViewController {
     @IBAction func doneButtonPressed(_ sender: Any) {
         print(11111111)
         if(texts.text != "abcdefghijklmnopqrstuvwxyz") {
-            print(11122111)
-            /*print(11111111)
             let alertController = UIAlertController(title: "這不是a~z", message: nil, preferredStyle: .alert)
             let action = UIAlertAction(title: "OK", style: .default, handler: nil)
             alertController.addAction(action)
             present(alertController, animated: true, completion: nil)
-            */
             return
         }
             timer.invalidate()

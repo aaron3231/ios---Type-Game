@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Ft1-cX-LOP">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Ft1-cX-LOP">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -204,7 +204,6 @@
                         <barButtonItem key="rightBarButtonItem" systemItem="done" id="8uS-Hz-SRz">
                             <connections>
                                 <action selector="doneButtonPressed:" destination="wvM-Bd-hC8" id="SHU-IP-VSh"/>
-                                <segue destination="BFV-MP-g4h" kind="unwind" identifier="goBackToRecordTableWithSegue" unwindAction="goBackToRecordTableWithSegue:" id="EzQ-0D-XNB"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
@@ -212,6 +211,7 @@
                         <outlet property="name" destination="rlB-sJ-URh" id="PRa-Du-oic"/>
                         <outlet property="spend" destination="TpI-TK-jEJ" id="yWA-1d-Zo8"/>
                         <outlet property="time" destination="0hy-EI-vmg" id="p98-ZD-YDb"/>
+                        <segue destination="BFV-MP-g4h" kind="unwind" identifier="goBackToRecordTableWithSegue" unwindAction="goBackToRecordTableWithSegue:" id="TdS-NC-xSD"/>
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7fH-D0-KtY" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -388,7 +388,6 @@
                             <barButtonItem systemItem="done" id="rj4-xT-24T">
                                 <connections>
                                     <action selector="doneButtonPressed:" destination="L2U-XU-04o" id="mSi-83-xmN"/>
-                                    <segue destination="kYC-oI-JTD" kind="unwind" identifier="goBackToRecordTTableWithSegue" unwindAction="goBackToRecordTTableWithSegue:" id="2Ll-rs-hAi"/>
                                 </connections>
                             </barButtonItem>
                             <barButtonItem systemItem="pause" id="pKf-nt-h0b">
@@ -407,6 +406,7 @@
                         <outlet property="name" destination="JOS-QC-1qe" id="FNv-eE-deS"/>
                         <outlet property="spend" destination="xo0-LA-OvJ" id="Oh1-20-Tvx"/>
                         <outlet property="texts" destination="BQ4-QX-1ZX" id="wXn-Nh-JDm"/>
+                        <segue destination="kYC-oI-JTD" kind="unwind" identifier="goBackToRecordTTableWithSegue" unwindAction="goBackToRecordTTableWithSegue:" id="Izt-Bg-Y8m"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="IUw-8e-q17" userLabel="First Responder" sceneMemberID="firstResponder"/>
